@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+groq
+python-dotenv
+presidio-analyzer
+presidio-anonymizer
+pdfplumber
+spacy
