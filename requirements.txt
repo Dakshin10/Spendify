@@ -5,4 +5,5 @@ python-dotenv
 presidio-analyzer
 presidio-anonymizer
 pdfplumber
+pikepdf
 spacy
