@@ -21,13 +21,12 @@ async def upload_statement(
         else:
             raise HTTPException(status_code=400, detail="Unsupported file format. Please upload CSV or PDF.")
 
-        # 2. Apply Machine Learning PII Scrubbing
+        # Applying Machine Learning PII Scrubbing
         safe_txns = clean_transactions(raw_txns)
 
         # 3. AI Categorization via Llama-3
         categorized_txns = categorize_transactions(safe_txns)
-
-        # TODO: Insert categorized_txns into SQLite database here
+
         
         return {
             "status": "success", 
