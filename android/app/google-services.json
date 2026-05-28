@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "516852975421",
+    "project_id": "spendify-98bb2",
+    "storage_bucket": "spendify-98bb2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:516852975421:android:a2f39d825ad6de44e86754",
+        "android_client_info": {
+          "package_name": "com.example.spendify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "516852975421-lcbe7p2mkmdfc34rhpe40lbkpqusrime.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spendify",
+            "certificate_hash": "dd7581da4da9622b58ba11db2e1e4ed28f776b17"
+          }
+        },
+        {
+          "client_id": "516852975421-s5b3u8ndi45bccbfqhpkkn79tg239g2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwSbOYDcJjkQAvjslIPrCT-MG5HZawjh0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "516852975421-s5b3u8ndi45bccbfqhpkkn79tg239g2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

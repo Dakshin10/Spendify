@@ -22,31 +22,3 @@ subprojects {
 tasks.register<Delete>("clean") {
     delete(rootProject.layout.buildDirectory)
 }
-
-subprojects {
-    if (project.name == "telephony") {
-        val configureNamespace = {
-            val androidExtension = project.extensions.findByName("android")
-            if (androidExtension != null) {
-                try {
-                    val baseExt = androidExtension as? com.android.build.gradle.BaseExtension
-                    baseExt?.namespace = "com.shounakmulay.telephony"
-                } catch (e: Exception) {
-                    try {
-                        androidExtension.javaClass.getMethod("setNamespace", String::class.java)
-                            .invoke(androidExtension, "com.shounakmulay.telephony")
-                    } catch (e2: Exception) {
-                        // ignore if both fail
-                    }
-                }
-            }
-        }
-        if (project.state.executed) {
-            configureNamespace()
-        } else {
-            project.afterEvaluate {
-                configureNamespace()
-            }
-        }
-    }
-}

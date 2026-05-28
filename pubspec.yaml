@@ -46,7 +46,7 @@ dependencies:
   shared_preferences: ^2.2.3
   file_picker: ^8.0.0
   http: ^1.2.0
-  telephony: ^0.2.0
+  another_telephony: ^0.4.1
   flutter_local_notifications: ^17.2.1
   uuid: ^4.3.3
 
